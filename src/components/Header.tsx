@@ -1,5 +1,5 @@
-import Link from 'next/link';
-import Image from 'next/image';
+import Link from "next/link";
+import Image from "next/image";
 
 const Header = () => {
   return (
@@ -10,26 +10,38 @@ const Header = () => {
             {/* Website Logo */}
             <div className="logo-header logo-dark md:mr-12">
               <Link href="/">
-                <a>
-                  <Image src="/assets/images/logo.svg" alt="logo" width={100} height={50} />
-                </a>
+                <Image
+                  src="/assets/images/logo.svg"
+                  alt="logo"
+                  width={100}
+                  height={50}
+                />
               </Link>
             </div>
 
             {/* Nav Toggle Button */}
-            <button className="navbar-toggler collapsed navicon justify-end" type="button">
+            <button
+              className="navbar-toggler collapsed navicon justify-end"
+              type="button"
+            >
               <span></span>
               <span></span>
               <span></span>
             </button>
 
             {/* Main Navigation */}
-            <div className="header-nav w3menu navbar-collapse justify-start w3menu" id="navbarNavDropdown">
+            <div
+              className="header-nav w3menu navbar-collapse justify-start w3menu"
+              id="navbarNavDropdown"
+            >
               <div className="logo-header logo-dark">
                 <Link href="/">
-                  <a>
-                    <Image src="/assets/images/logo.svg" alt="logo" width={100} height={50} />
-                  </a>
+                  <Image
+                    src="/assets/images/logo.svg"
+                    alt="logo"
+                    width={100}
+                    height={50}
+                  />
                 </Link>
               </div>
               <ul className="nav navbar-nav">
@@ -43,26 +55,35 @@ const Header = () => {
                     <ul className="demo-menu mb-0">
                       <li>
                         <Link href="/index">
-                          <a>
-                            <Image src="/assets/images/demo/demo-1.png" alt="Home Page 1" width={200} height={100} />
-                            <span className="menu-title">01 Home Page</span>
-                          </a>
+                          <Image
+                            src="/assets/images/demo/demo-1.png"
+                            alt="Home Page 1"
+                            width={200}
+                            height={100}
+                          />
+                          <span className="menu-title">01 Home Page</span>
                         </Link>
                       </li>
                       <li>
                         <Link href="/index-2">
-                          <a>
-                            <Image src="/assets/images/demo/demo-2.png" alt="Home Page 2" width={200} height={100} />
-                            <span className="menu-title">02 Home Page</span>
-                          </a>
+                          <Image
+                            src="/assets/images/demo/demo-2.png"
+                            alt="Home Page 2"
+                            width={200}
+                            height={100}
+                          />
+                          <span className="menu-title">02 Home Page</span>
                         </Link>
                       </li>
                       <li>
                         <Link href="/index-3">
-                          <a>
-                            <Image src="/assets/images/demo/demo-3.png" alt="Home Page 3" width={200} height={100} />
-                            <span className="menu-title">03 Home Page</span>
-                          </a>
+                          <Image
+                            src="/assets/images/demo/demo-3.png"
+                            alt="Home Page 3"
+                            width={200}
+                            height={100}
+                          />
+                          <span className="menu-title">03 Home Page</span>
                         </Link>
                       </li>
                     </ul>
@@ -80,11 +101,24 @@ const Header = () => {
                       <li className="side-left">
                         <ul>
                           <li>
-                            <a href="javascript:void(0);" className="menu-title">Shop Structure</a>
+                            <a
+                              href="javascript:void(0);"
+                              className="menu-title"
+                            >
+                              Shop Structure
+                            </a>
                             <ul>
-                              <li><Link href="/shop-standard"><a>Shop Standard</a></Link></li>
-                              <li><Link href="/shop-list"><a>Shop List</a></Link></li>
-                              <li><Link href="/shop-with-category"><a>Shop With Category</a></Link></li>
+                              <li>
+                                <Link href="/shop-standard">Shop Standard</Link>
+                              </li>
+                              <li>
+                                <Link href="/shop-list">Shop List</Link>
+                              </li>
+                              <li>
+                                <Link href="/shop-with-category">
+                                  Shop With Category
+                                </Link>
+                              </li>
                               {/* Add more shop links here */}
                             </ul>
                           </li>
@@ -92,7 +126,12 @@ const Header = () => {
                       </li>
                       <li className="side-right">
                         <div className="adv-media">
-                          <Image src="/assets/images/adv-1.png" alt="Advertisement" width={300} height={200} />
+                          <Image
+                            src="/assets/images/adv-1.png"
+                            alt="Advertisement"
+                            width={300}
+                            height={200}
+                          />
                         </div>
                       </li>
                     </ul>
@@ -108,10 +147,20 @@ const Header = () => {
                   <div className="mega-menu">
                     <ul>
                       <li>
-                        <a href="javascript:void(0);" className="menu-title">Blog Dark Style</a>
+                        <a href="javascript:void(0);" className="menu-title">
+                          Blog Dark Style
+                        </a>
                         <ul>
-                          <li><Link href="/blog-dark-2-column"><a>Blog 2 Column</a></Link></li>
-                          <li><Link href="/blog-dark-2-column-sidebar"><a>Blog 2 Column Sidebar</a></Link></li>
+                          <li>
+                            <Link href="/blog-dark-2-column">
+                              Blog 2 Column
+                            </Link>
+                          </li>
+                          <li>
+                            <Link href="/blog-dark-2-column-sidebar">
+                              Blog 2 Column Sidebar
+                            </Link>
+                          </li>
                           {/* Add more blog links here */}
                         </ul>
                       </li>
@@ -131,10 +180,13 @@ const Header = () => {
                         <ul className="portfolio-nav-link">
                           <li>
                             <Link href="/portfolio-tiles">
-                              <a>
-                                <Image src="/assets/images/portfolio/icons/portfolio-tiles.svg" alt="Portfolio Tiles" width={30} height={30} />
-                                <span>Portfolio Tiles</span>
-                              </a>
+                              <Image
+                                src="/assets/images/portfolio/icons/portfolio-tiles.svg"
+                                alt="Portfolio Tiles"
+                                width={30}
+                                height={30}
+                              />
+                              <span>Portfolio Tiles</span>
                             </Link>
                           </li>
                           {/* Add more portfolio links here */}
@@ -153,10 +205,16 @@ const Header = () => {
                   <div className="mega-menu">
                     <ul>
                       <li>
-                        <a href="javascript:void(0);" className="menu-title">Pages</a>
+                        <a href="javascript:void(0);" className="menu-title">
+                          Pages
+                        </a>
                         <ul>
-                          <li><Link href="/about-us"><a>About Us</a></Link></li>
-                          <li><Link href="/about-me"><a>About Me</a></Link></li>
+                          <li>
+                            <Link href="/about-us">About Us</Link>
+                          </li>
+                          <li>
+                            <Link href="/about-me">About Me</Link>
+                          </li>
                           {/* Add more page links here */}
                         </ul>
                       </li>
@@ -171,8 +229,12 @@ const Header = () => {
                     <i className="fas fa-chevron-down tabindex"></i>
                   </a>
                   <ul className="sub-menu">
-                    <li><Link href="/account-dashboard"><a>Dashboard</a></Link></li>
-                    <li><Link href="/account-orders"><a>Orders</a></Link></li>
+                    <li>
+                      <Link href="/account-dashboard">Dashboard</Link>
+                    </li>
+                    <li>
+                      <Link href="/account-orders">Orders</Link>
+                    </li>
                     {/* Add more account links here */}
                   </ul>
                 </li>
@@ -182,16 +244,32 @@ const Header = () => {
               <div className="dz-social-icon">
                 <ul>
                   <li>
-                    <a className="fab fa-facebook-f" target="_blank" href="https://www.facebook.com/dexignzone"></a>
+                    <a
+                      className="fab fa-facebook-f"
+                      target="_blank"
+                      href="https://www.facebook.com/dexignzone"
+                    ></a>
                   </li>
                   <li>
-                    <a className="fab fa-twitter" target="_blank" href="https://twitter.com/dexignzones"></a>
+                    <a
+                      className="fab fa-twitter"
+                      target="_blank"
+                      href="https://twitter.com/dexignzones"
+                    ></a>
                   </li>
                   <li>
-                    <a className="fab fa-linkedin-in" target="_blank" href="https://www.linkedin.com/showcase/3686700/admin/"></a>
+                    <a
+                      className="fab fa-linkedin-in"
+                      target="_blank"
+                      href="https://www.linkedin.com/showcase/3686700/admin/"
+                    ></a>
                   </li>
                   <li>
-                    <a className="fab fa-instagram" target="_blank" href="https://www.instagram.com/dexignzone/"></a>
+                    <a
+                      className="fab fa-instagram"
+                      target="_blank"
+                      href="https://www.instagram.com/dexignzone/"
+                    ></a>
                   </li>
                 </ul>
               </div>
@@ -203,28 +281,54 @@ const Header = () => {
                 <ul className="header-right">
                   <li className="nav-item login-link">
                     <Link href="/shop-my-account">
-                      <a className="nav-link border-b border-[#0000005c]">Login / Register</a>
+                      <span className="nav-link border-b border-[#0000005c]">
+                        Login / Register
+                      </span>
                     </Link>
                   </li>
                   <li>
-                    <a href="javascript:void(0);" className="offcanvas-btn" data-target="offcanvasTop">
+                    <a
+                      href="javascript:void(0);"
+                      className="offcanvas-btn"
+                      data-target="offcanvasTop"
+                    >
                       <i className="iconly-Light-Search"></i>
                     </a>
                   </li>
                   <li>
-                    <a className="offcanvas-btn" href="javascript:void(0);" data-target="offcanvasRight">
+                    <a
+                      className="offcanvas-btn"
+                      href="javascript:void(0);"
+                      data-target="offcanvasRight"
+                    >
                       <i className="iconly-Light-Heart2"></i>
                     </a>
                   </li>
                   <li>
-                    <a className="offcanvas-btn" href="javascript:void(0);" data-target="offcanvasRight">
+                    <a
+                      className="offcanvas-btn"
+                      href="javascript:void(0);"
+                      data-target="offcanvasRight"
+                    >
                       <i className="iconly-Broken-Buy"></i>
-                      <span className="absolute -top-1 right-0.5 text-[11px] flex items-center justify-center min-h-4.5 min-w-4.5 font-bold rounded-full bg-primary text-white">5</span>
+                      <span className="absolute -top-1 right-0.5 text-[11px] flex items-center justify-center min-h-4.5 min-w-4.5 font-bold rounded-full bg-primary text-white">
+                        5
+                      </span>
                     </a>
                   </li>
                   <li className="filte-link">
-                    <a href="javascript:void(0);" className="filte-btn offcanvas-btn" data-target="offcanvasLeft">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 13" fill="none">
+                    <a
+                      href="javascript:void(0);"
+                      className="filte-btn offcanvas-btn"
+                      data-target="offcanvasLeft"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="30"
+                        height="30"
+                        viewBox="0 0 30 13"
+                        fill="none"
+                      >
                         <rect y="11" width="30" height="2" fill="black"></rect>
                         <rect width="30" height="2" fill="black"></rect>
                       </svg>
