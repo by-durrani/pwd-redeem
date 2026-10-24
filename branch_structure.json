@@ -1,0 +1,18 @@
+{
+  "default_branch": "main",
+  "branches": [
+    "clerk-auth",
+    "main",
+    "merge"
+  ],
+  "parent": {
+    "clerk-auth": "main",
+    "main": null,
+    "merge": "main"
+  },
+  "order": [
+    "main",
+    "clerk-auth",
+    "merge"
+  ]
+}
